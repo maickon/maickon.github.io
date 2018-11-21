@@ -36,7 +36,7 @@ background-color: #fff;
 border: 1px solid #ccc;
 padding: 5px; 
 }
-
+#more-project p{ text-align: right; }
 /** @group skills **/
 #skills-left { display: block; float: left; margin-right: 30px; }
 #skills-right { display: block; float: left;}
