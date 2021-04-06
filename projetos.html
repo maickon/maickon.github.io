@@ -22,39 +22,41 @@
 <body>
 	<div id="w" itemscope itemtype="http://schema.org/Person">
 		<header class="clearfix">
-			<div id="info">			
+            <div id="info">			
 				<h1><span itemprop="name">Maickon Rangel</span></h1>
 				<h3><span itemprop="jobTitle">Desenvolvedor web &amp; Freelancer</span></h3>
-				<small itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+				<small itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress">
 				  <span itemprop="addressLocality">São João da Barra</span>, 
 				  <span itemprop="addressRegion">Rio de Janeiro</span>, 
 				  <span itemprop="addressCountry">Brasil</span>
 				</small>
 				<small><span itemprop="email">maickon4developers@gmail.com</span></small>
-				<small><span itemprop="age">30 anos, Solteiro</span></small>
+				<small><span itemprop="age"><span id="age"></span> anos, Solteiro</span></small>
 				<small>
-					&bull;<a href="https://api.whatsapp.com/send?phone=5522998291722" target="blank" itemprop="url">WhatsApp: 22 998291722</a>
-					<br>&bull; 
+					•<a href="https://api.whatsapp.com/send?phone=55981877899" target="blank" itemprop="url">WhatsApp: 22 981877899</a>
+					<br>• 
 					<a href="https://www.facebook.com/maickonr" target="blank" itemprop="url">
 					    facebook/maickonr
 					</a>
-					<br>&bull;
+					<br>•
 					<a href="https://github.com/maickon/" target="blank" itemprop="url">
 					    github/maickon
-					</a><br>&bull;
+					</a><br>•
 					<a href="https://gitlab.com/maickonrangel" target="blank" itemprop="url">
 					    gitlab/maickonrangel
-					</a><br>&bull; 
+					</a><br>• 
 					<a href="https://www.workana.com/freelancer/4ddf10d14c9943031eb02bd83eed2095?ref=user_dropdown" target="blank" itemprop="url">
 					    workana/maickonrangel
-					</a><br>
+					</a><br>• 
+                    <a href="https://mksoft.com.br/" target="blank" itemprop="url">
+                        site/mksoft.com.br
+                    </a><br>
 				</small>
 			</div>
-			
-			<div id="photo">
-				<img src="images/maickon.jpg" alt="Foto de Maickon Rangel" itemprop="image" />
-			</div>
-		</header>
+            <div id="photo">
+                <img src="images/1517564553820.jpg" width="300" alt="Foto de Maickon Rangel" itemprop="image" />
+            </div>
+        </header>
 			
 		<section id="project">
 			<h2>Outros Projetos</h2>
@@ -79,7 +81,13 @@
         	    </span>
         	</p>
         </section>
-
+        <script>
+		    let year = document.getElementsByClassName("year");
+		    document.getElementById("age").innerHTML = new Date().getFullYear() - 1988;
+		    year[0].innerHTML = new Date().getFullYear();
+		    year[1].innerHTML = new Date().getFullYear();
+		    year[2].innerHTML = new Date().getFullYear();
+		</script>
 	</div>
 </body>
 </html>
